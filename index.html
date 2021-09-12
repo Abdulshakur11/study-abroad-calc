@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study abroad</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header class="site-header header">
+    <div class="container">
+      <h1 class="header__title">Chet elda ta'lim olish</h1>
+    </div>
+
+    
+  <div class="clock">
+    <span id="soat"></span>
+    <span id="minut"></span>
+    <span id="sekund"></span>
+  </div>
+
+  </header>
+
+  <main>
+    <section class="form-section">
+      <div class="container">
+        <form class="form-js" method="POST">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+              <label for="name-id" class="form-label lable">Ismingizni kiriting</label>
+              <input id="name-id" type="text" class="form-control name-js" placeholder="Andrey" aria-label="First name">
+            </div>
+            <div class="col-md-4">
+              <label for="sure_name-id" class="form-label lable">Familiyangizni kiriting</label>
+              <input id="sure_name-id" type="text" class="form-control sure-name-js" placeholder="Ivanov" aria-label="Last name">
+            </div>
+            <div class="col-md-4">
+              <label for="date-id" class="form-label lable">Tug`ilgan vaqtingizni kiriting</label>
+              <input id="date-id" type="date" class="form-control birthday-js" placeholder="Tug`ilgan vaqtingizni kiriting"
+               aria-label="Date of birth">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <label for="country-id" class="form-label lable">Qayerda tahsil olishni tanlang</label>
+              <select class="form-select country-select-js" id="country-id" name="Country">
+                <option selected="" disabled="">Qayerda tahsil olishni tanlang</option>
+                <option value="pl">Vistulla Universiteti Polsha</option>
+                <option value="en">Oxford  Universiteti Angliya</option>
+                <option value="ru">Sinergiya Universiteti Rasiya</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="how" class="form-label lable">Qanday tarzda o'qimoqchisiz</label>
+              <select class="form-select how-study-js" id="how" name="how-study">
+                <option selected="" disabled="">Qanday tarzda o'qimoqchisiz</option>
+                <option value="on">Online oqish</option>
+                <option value="of">Ofline o'qish</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-info mt-4">Hisoblash</button>
+        </form>
+        
+      </div>
+    </section>
+    
+    <section class="check-section">
+      <div class="container">
+          <p class="check-message"></p>
+          <table class="table table-js">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Harajat nomi</th>
+                <th scope="col">Narxi</th>
+              </tr>
+            </thead>
+            <tbody class="tbody-js">
+              <tr>
+                <th scope="row">1</th>
+                <td>O'qish tarzi</td>
+                <td class="contract-sell-js"></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Bilet Narxi</td>
+                <td class="ticket-sell-js"></td>
+              </tr>
+                <th scope="row">3</th>
+                <td>Jami</td>
+                <td class="all-prise"></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </section>
+  </main>
+  <!-- <div class="loader">
+    <img class="loading-icon" src="./images/loading.svg" alt="loading-icon" width="100" height="100">
+  </div> -->
+  <div class="bg-color"></div>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./main.js/index.js"></script>
+</body>
+</html>
